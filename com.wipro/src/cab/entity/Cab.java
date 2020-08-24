@@ -7,7 +7,6 @@ public class Cab
    boolean isAvailable;
 
 	public Cab() {
-		// TODO Auto-generated constructor stub
 	}
 	public Cab(int cabId, String cabType, String regNo, boolean isAvailable) {
 		
