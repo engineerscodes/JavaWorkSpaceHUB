@@ -3,13 +3,17 @@ import java.util.*;
 public class array_list 
 {         
     static ArrayList n=new ArrayList<>();
+    static ArrayList<Object> n1=new ArrayList<Object>();
     public static void main(String ...arg)
     {
-    	n.add("red");
+    	n.add("red");  //red is object.
     	n.add("yellow");
     	n.add("green");
     	n.add(3343);
     	
+    	n1.add(25);
+    	n1.add(100);
+    	n1.add("1515");
     	for(Object s:n)
     	{
     		System.out.println(s);
