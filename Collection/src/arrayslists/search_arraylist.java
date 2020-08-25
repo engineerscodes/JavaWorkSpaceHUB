@@ -17,7 +17,7 @@ public class search_arraylist
 		n.add("10100");
 		n.add(154);
 		n.add(78547);
-		n.add(80);  //n.add(0080)
+		n.add(80); 
 		
 		if(n.contains(80))
 		{
