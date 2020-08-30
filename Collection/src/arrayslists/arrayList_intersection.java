@@ -22,7 +22,7 @@ public class arrayList_intersection
 		ArrayList intersect=new ArrayList();
 		for(Object s:n1)
 		{
-			//intersect.add(n2.contains(s)?s:null);  Intersection of 2 arrayList-[null, Red, null, null, 5]
+			//intersect.add(n2.contains(s)?s:null); output --> Intersection of 2 arrayList-[null, Red, null, null, 5]
 			if(n2.contains(s))
 			{
 				intersect.add(s);
