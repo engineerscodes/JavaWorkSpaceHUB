@@ -8,7 +8,7 @@ import java.util.*;
    RANDOM CODER'S
  *
  */
-public  abstract class abstract_linkedlist 
+public abstract class abstract_linkedlist 
 {
 
     LinkedList <Integer> d;
@@ -25,6 +25,7 @@ public  abstract class abstract_linkedlist
 		str=new LinkedList();
 		c=new LinkedList();
 		obj=new LinkedList();
+		
 	}
 	protected abstract void add();
 	public abstract void display();

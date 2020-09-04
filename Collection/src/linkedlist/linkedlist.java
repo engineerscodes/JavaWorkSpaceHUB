@@ -58,17 +58,16 @@ public class linkedlist  extends abstract_linkedlist
     	System.out.println("Object type Linked list \n"+obj);
     	
     }
-   
 	public static void main(String[] args) 
 	{
-		abstract_linkedlist ad=new linkedlist();//abstract class reference objects
+		/*abstract_linkedlist ad=new linkedlist();//abstract class reference objects
 		//abstract_linkedlist a=new abstract_linkedlist(); abstract class cannot have objects
 		linkedlist ln=new linkedlist();
 		ad.add();
 		ad.display();
 		ln.add();   //adding element using subclass obj
 		ln.display(); //displaying using subclass obj
-		ln.display2();
+		ln.display2();*/
 	}
 
 }
