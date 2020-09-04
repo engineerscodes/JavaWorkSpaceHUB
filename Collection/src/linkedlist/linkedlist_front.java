@@ -8,10 +8,10 @@ package linkedlist;
    RANDOM CODER'S
  *
  */
-public class linkedlist_end 
+public class linkedlist_front 
 {
      static linkedlist l=new linkedlist();
-	public linkedlist_end() 
+	public linkedlist_front() 
 	{
        super();
 	}
