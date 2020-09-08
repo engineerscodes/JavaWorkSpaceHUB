@@ -30,6 +30,11 @@ public class print_from_pos
        {
     	   System.out.print(i.next()+" , ");
        }
+        // String hel="naveen";
+       //System.out.println(l.getClass());
+      // Integer x=new Integer(100);
+      // System.out.println(x.intValue());
+       //Float x=Float.parseFloat(hel);
        
     }
 	public static void main(String[] args) 
