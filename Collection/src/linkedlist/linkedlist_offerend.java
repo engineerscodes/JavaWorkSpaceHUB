@@ -26,6 +26,7 @@ public class linkedlist_offerend
 		System.out.println("Display the list -"+off.end.str);
 		off.end.str.offer("ADD TO TAIL");
 		System.out.println("Display the list -"+off.end.str);
+	
 	}
 
 }
