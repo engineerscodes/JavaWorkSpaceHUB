@@ -8,7 +8,7 @@ import java.util.*;
    RANDOM CODER'S
  *
  */
-public class linkedlist_swap 
+public class linkedlist_swap
 {
     static linkedlist l;
 	public linkedlist_swap() 
