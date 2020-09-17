@@ -14,7 +14,7 @@ public class linkedlist_print
 */
 	static linkedlist l;
 	public linkedlist_print() 
-	{   super();
+	{  
 		l=new linkedlist();
 	}
     public static void seen()

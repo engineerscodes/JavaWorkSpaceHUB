@@ -14,7 +14,7 @@ public class remove_list
     static linkedlist l;
 	public remove_list() 
 	{
-	 super();
+	
      nav=new Scanner(System.in);
      l=new linkedlist(); 
 	}

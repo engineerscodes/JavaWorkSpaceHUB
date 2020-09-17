@@ -10,7 +10,7 @@ public class linkedlist_display
 {   static linkedlist l;
 	public linkedlist_display()
 	{
-      super();
+      
       l=new linkedlist();
 	}
 

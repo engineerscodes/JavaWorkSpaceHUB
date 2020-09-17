@@ -11,7 +11,7 @@ import java.util.*;
 public class linkedlist_offerfirst 
 {  static linkedlist list;
 	public linkedlist_offerfirst() 
-	{   super();
+	{   
 		list=new linkedlist();
 	}
 

@@ -12,7 +12,7 @@ public class search_linkedlist
 {   static linkedlist n;
     static Scanner nav;
 	public search_linkedlist() 
-	{   super();
+	{  
 		n=new linkedlist();
 		nav=new Scanner(System.in);
 	}

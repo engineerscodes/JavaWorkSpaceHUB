@@ -16,7 +16,7 @@ public class print_from_pos
 	 */
 	public print_from_pos() 
 	{
-		super();
+		
 		l=new linkedlist();
 		
 	}
