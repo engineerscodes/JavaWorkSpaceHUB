@@ -25,7 +25,6 @@ public class linkedlist_search
 		System.out.println("Enter the element in search");
 		int ele=nav.nextInt();
 		System.out.println(l.d.contains(ele));
-		
 	}
 
 }
