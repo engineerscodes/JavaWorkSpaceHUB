@@ -21,7 +21,7 @@ public class Greater_than_equal
 
 	public static void main(String[] args)
 	{
-		System.out.println ("Implementing TreeSet :");
+		   System.out.println ("Implementing TreeSet :");
 	       new Greater_than_equal();
 	       int a[]={1,4,6,8,10,15,20,44,0,0,1,50};
 	       for(int c:a)
