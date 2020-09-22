@@ -29,6 +29,7 @@ public class covert_to_treeset
 		TreeSet <Integer> t=new TreeSet(h);
 		for(Integer tree:t)
 			System.out.println(" "+tree);
+		
 	
 	}
 
