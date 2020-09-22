@@ -13,7 +13,7 @@ public class Tree
     static TreeSet <Integer>t;
 	public Tree() 
 	{
-      t=new TreeSet();
+      t=new <Integer> TreeSet();
 	}
 
 	public static void main(String[] args) 
