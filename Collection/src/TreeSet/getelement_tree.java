@@ -27,6 +27,7 @@ public class getelement_tree
 	       System.out.println(" Displaying the TreeSet \n"+t);
 	       System.out.println("Root:"+t.first());
 	       System.out.println("Last element:"+t.last());
+	       
 	}
 
 }
