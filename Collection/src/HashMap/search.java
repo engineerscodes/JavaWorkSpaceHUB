@@ -28,7 +28,7 @@ public class search {
       else
     	  System.out.println("Not present"); 
       System.out.println("Enter to check if the Value is present :");
-      if(map.containsValue(nav.nextInt()))
+      if(map.containsValue(nav.next()))  //if nav.nextInt() the output is "Value Not present"
       {
     	  System.out.println("Is present"); 
       }
