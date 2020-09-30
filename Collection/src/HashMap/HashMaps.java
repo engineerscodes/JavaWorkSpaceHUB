@@ -15,6 +15,7 @@ public class HashMaps
 	{
 		nav=new Scanner(System.in);
 		map= new HashMap(); 
+		insert_to_Map();
 	}
  
 	public void insert_to_Map()
@@ -29,7 +30,6 @@ public class HashMaps
 	public static void main(String[] args) 
 	{
 		HashMaps obj =new HashMaps();
-		obj.insert_to_Map();
          for(Map.Entry x:obj.map.entrySet())
         	 System.out.println(x.getKey()+" "+x.getValue());
 	}
