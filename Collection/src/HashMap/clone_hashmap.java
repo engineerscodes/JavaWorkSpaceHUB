@@ -25,7 +25,11 @@ public class clone_hashmap {
         HashMap<Integer,String> temp2=new HashMap(map);
         System.out.println("Displaying the HaSHMAP<String,String> :"+temp);
         System.out.println("Displaying the HaSHMAP<Integer,String> :"+temp2);
-        
+       // HashMap c=map.clone(); Type mismatch: cannot convert from Object to HashMap
+        HashMap c=(HashMap<Integer,String>)map.clone();
+        HashMap<String,String> c1=(HashMap<String,String>)map.clone();
+        System.out.println("Displaying the HaSHMAP<Integer,String> using Clone :"+c);
+        System.out.println("Displaying the HaSHMAP<String,String> using Clone :"+c1);
 	}
 
 }
