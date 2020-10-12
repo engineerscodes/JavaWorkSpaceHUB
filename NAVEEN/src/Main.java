@@ -43,7 +43,13 @@ public class Main
     	}
     			
     	public static void main(String agr[])
-    	{
+    	{  
+    		
+    		String myStr1 = "Hello";
+    		String myStr2 = "Hello";
+    		String myStr3 = "Another Hello";
+    		System.out.println(myStr1.equals(myStr2)); // Returns true because they are equal
+    		System.out.println(myStr1.equals(myStr3));
     		 System.out.println("Stack size"); 
     		    max = nav.nextInt();
     		    int z1;
