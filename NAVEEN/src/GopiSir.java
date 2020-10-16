@@ -25,9 +25,7 @@ public class GopiSir {
 	{  
 		  deat("abc","");
 		  n.remove("");
-		 //
-		  Collections.sort(n);
-		  System.out.print(n);
+		 // System.out.print(n);
 		  sort();
 	}
 	/**
