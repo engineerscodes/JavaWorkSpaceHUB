@@ -3,19 +3,18 @@
  */
 package HashMap;
 import java.util.HashMap;
+
 /**
  * @author M.NAVEEN
    RANDOM CODER'S
  *
  */
 public class clone_hashmap {
-   static  HashMap<Integer,String> map;
-    
+   static  HashMap<Integer,String> map; 
 	public clone_hashmap() 
 	{
         map=new HashMap <Integer,String>();
 	}
-
 	public static void main(String[] args) 
 	{
         new clone_hashmap() ;
