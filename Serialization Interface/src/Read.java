@@ -18,7 +18,7 @@ public class Read {
 	{   ObjectInputStream obj;
 	ArrayList n1 = null;
 		try {
-		obj=new ObjectInputStream(new FileInputStream("output.md"));
+		obj=new ObjectInputStream(new FileInputStream("output.ser"));
 		 n1=(ArrayList)obj.readObject();
 	}
 	catch(Exception e)
