@@ -39,7 +39,7 @@ public class Write  {
 	}*/
 		//instead 
 		try {
-			FileOutputStream f=new FileOutputStream("Output.txt");	
+			FileOutputStream f=new FileOutputStream("Output.md");	
 			ObjectOutputStream obj=new ObjectOutputStream(f);
 			obj.writeObject(n1);
 			obj.flush();
