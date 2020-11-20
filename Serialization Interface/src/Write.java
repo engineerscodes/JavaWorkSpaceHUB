@@ -16,7 +16,7 @@ public class Write  {
 
 	public static void main(String[] args) 
 	{
-		Employee e1=new Employee("Naveen","CSENS",7185);
+	    Employee e1=new Employee("Naveen","CSENS",7185);
 		Employee e2=new Employee("Bala","CSENS",7195);
 		Employee e3=new Employee("Praveen","CSECD",7168);
 		
