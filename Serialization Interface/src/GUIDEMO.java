@@ -25,7 +25,7 @@ import javax.swing.JRadioButton;
 public class GUIDEMO implements ActionListener,Serializable
 {
 	  JFrame frame;
-	 
+	  int count=0;
 	    static  JComboBox <String>cb;
 	     JLabel label;
 	     JRadioButton male,female;
@@ -102,11 +102,18 @@ public class GUIDEMO implements ActionListener,Serializable
 	       new GUIDEMO ();
 		}
 		public void actionPerformed(ActionEvent e) 
-		{        female.setBackground(Color.RED);
+		{     
+		
+		if(count%2==0)
+			female.setBackground(Color.RED);
+		else
+			female.setBackground(Color.yellow);
+		count++;
 			 try {  
 					FileOutputStream f=new FileOutputStream("Output.ser");	
 					ObjectOutputStream obj=new ObjectOutputStream(f);
 					obj.writeObject(frame);
+					//obj.writeObject(btn);
 					obj.flush();
 					obj.close();
 				}
