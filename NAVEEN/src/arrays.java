@@ -37,10 +37,15 @@ public class arrays
 	  return ele;
   }
   public static void main(String nav[]) 
-  {
+  {   
+	/*  String s="Navaen";
+	 s= s.replace("a","[.]");
+      System.out.println(s);*/
 	  System.out.println("size");
 	  arrays n=new arrays(10);
 	  input();
 	  mixint();
+	
+	 
   }
 }
