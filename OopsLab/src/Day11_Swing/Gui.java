@@ -3,43 +3,28 @@
  */
 package Day11_Swing;
 import java.util.*;
-import java.awt.EventQueue;
 
-import javax.swing.ButtonGroup;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 
-import java.awt.Font;
-import javax.swing.JTextField;
 
-import org.jdatepicker.impl.JDatePanelImpl;
-import org.jdatepicker.impl.JDatePickerImpl;
-import org.jdatepicker.impl.UtilDateModel;
+import org.jdatepicker.impl.*;
+import java.text.*;
+import java.time.format.*;
 
-import javax.swing.JTextArea;
-import javax.swing.JRadioButton;
-import javax.swing.JButton;
+import javax.swing.JPanel;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
 import javax.swing.JFormattedTextField.AbstractFormatter;
 
-import java.awt.event.ActionListener;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
-import java.awt.event.ActionEvent;
-import javax.swing.JPanel;
-
-/**
- *  @author M.NAVEEN
- *  RANDOM CODER'S
- *  Tech/Project Lead Android Club
- */
 public class Gui {
 
 	private JFrame frame;
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
+	
 	private JTextField textField_3;
 	private JTextField textField_4;
 	String Name,mName,LName,Number,Adrress,profession;
@@ -123,6 +108,7 @@ public class Gui {
 		
 		textField_3 = new JTextField();
 		textField_3.setBounds(230, 305, 161, 29);
+		
 		frame.getContentPane().add(textField_3);
 		textField_3.setColumns(10);
 		
@@ -209,7 +195,11 @@ public class Gui {
 		JButton btnPrint = new JButton("Print");
 		btnPrint.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0)
-			{
+			{   
+				String textString=textField_3.getText();
+				if(textString.length()>10)
+					{JOptionPane.showMessageDialog(textField_3,"Error Number must be Less 11");return ;}
+				
 				Name=textField.getText();
 			//	System.out.println("Nmae :"+Name);
 				mName=textField_1.getText();
@@ -218,7 +208,7 @@ public class Gui {
 				//System.out.println(Adrress);
 				String Number=textField_3.getText();
 				String profession=textField_4.getText();
-				JOptionPane.showMessageDialog(textField,"NAME :"+Name+" "+mName+" "+LName+"\n"+"Adress :"+Adrress+"\n"+"Number :"+Number+"\nProfession :"+profession);
+				JOptionPane.showMessageDialog(textField,"NAME :"+Name+" "+mName+" "+LName+"\n"+"Adress :"+Adrress+"\n"+"Number :"+Number+"\nProfession :"+profession+"DOB :"+datee);
 				
 			}
 		});
