@@ -21,12 +21,9 @@ public class arrayList_union
     	ArrayList n3=new ArrayList();
     	for(Object temp:n1)
     	{
-    		if(n2.contains(temp))
+    		
     			n3.add(temp);
-    		else
-    		{
-    			n3.add(temp);
-    		}
+    		
     	}
     	for(Object temp:n2)
     	{
