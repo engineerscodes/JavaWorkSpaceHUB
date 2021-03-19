@@ -10,7 +10,6 @@ public class array_list
     	n.add("yellow");
     	n.add("green");
     	n.add(3343);
-    	
     	n1.add(25);
     	n1.add(100);
     	n1.add("1515");
