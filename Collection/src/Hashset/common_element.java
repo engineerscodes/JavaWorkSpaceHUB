@@ -24,7 +24,7 @@ public class common_element
       new common_element();
        h1.add("Life") ;
        h1.add("My");
-       h1.add("Pie");
+       h1.add("Pie"); 
        System.out.println("Displaying HashSet h1"+h1);
        h2.add("My");
        h2.add("my");
