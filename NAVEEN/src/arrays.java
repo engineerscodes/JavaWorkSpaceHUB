@@ -41,10 +41,36 @@ public class arrays
 	/*  String s="Navaen";
 	 s= s.replace("a","[.]");
       System.out.println(s);*/
-	  System.out.println("size");
-	  arrays n=new arrays(10);
-	  input();
-	  mixint();
+	 // System.out.println("size");
+	 // arrays n=new arrays(10);
+	 // input();
+	//  mixint();
+	  int ind[]= {4,5,6,7,0,2,1,3};
+	  String s="codeleet";
+	  
+      String str[]=new String[ind.length] ;   
+      for(int i=0;i<ind.length;i++)
+      {
+    	 str[ind[i]]=s.charAt(i)+"";
+    	  
+      }
+      
+    final  ArrayList <Object> n=new ArrayList <>();
+     //  n=new ArrayList();// The final local variable n cannot be assigned. It must be blank and not using a compound 
+  	// assignment
+      n.add(233);
+      n.add("db");
+   //   System.out.println("N1 -"+n);
+      
+     ArrayList  <Object> n2=n;
+                  
+      n2.add("REFERNCES");
+      
+      System.out.println("N1-"+n);
+      
+      System.out.println("N2-"+n2);
+      
+    // System.out.println(Arrays.toString(str));
 	
 	 
   }
