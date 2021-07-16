@@ -28,7 +28,9 @@ public class que
              
              System.out.println(+ele+":the element is pushed::");
         }
+        
         else{
+        	 System.out.println("ENTER THE ELEMENT TO PUSH::");
          int qele=nav.nextInt();
          rear=rear+1;
          que[rear]=qele;
@@ -48,8 +50,8 @@ public class que
                  // }
                    
          if(rear==-1 && front==-1)
-         System.out.println("::underFLOW::");
-         else if(rear==front)
+          System.out.println("::underFLOW::");
+         if(rear==front)
          {
              int x=que[front];
              rear=rear-1;
@@ -72,7 +74,7 @@ public class que
         for(int i=front;i<=rear;++i)
         {
             System.out.println("elements in queue");
-             System.out.print(que[i]);
+             System.out.print(que[i]+"\n");
              
         }
        
