@@ -13,3 +13,4 @@ My Daily Java Works
 
 # THREAD NOTES
  1) [Potential concurrency issue when Integer object is used as a lock in synchronized block](https://gist.github.com/engineerscodes/312780a6c710a9d7ba0a87b074c2c9f0)
+ 2) [Primitive Wrapper Classes are Immutable in Java](https://www.geeksforgeeks.org/primitive-wrapper-classes-are-immutable-in-java/)
