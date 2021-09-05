@@ -9,3 +9,7 @@ My Daily Java Works
 <p align="center">
 <img src="https://www.valuecoders.com/blog/wp-content/uploads/2018/04/java-10-new-features-and-enhancements.jpg"  alt="JAVA IMG" height="500px" >
 </p>
+
+
+# THREAD NOTES
+ 1) [Potential concurrency issue when Integer object is used as a lock in synchronized block](https://gist.github.com/engineerscodes/312780a6c710a9d7ba0a87b074c2c9f0)
