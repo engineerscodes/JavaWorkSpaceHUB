@@ -10,7 +10,8 @@ public final class Bike implements DataLake, allowed {
 
 final class D {
 
-    public void sendMsg(allowed obj) {
+   /* public void sendMsg(allowed obj) {
         new Bike().sendMsg(new D());
     }
+    */
 }
