@@ -1,26 +1,33 @@
 package org.engineerscodes.app;
 
+import lombok.extern.slf4j.Slf4j;
+import org.engineerscodes.app.jpa.Repo;
+import org.engineerscodes.app.jpa.millions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.r2dbc.core.R2dbcEntityOperations;
+import org.springframework.data.relational.core.query.Criteria;
+import org.springframework.data.relational.core.query.Query;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import java.util.stream.Stream;
+import reactor.core.publisher.Flux;
 
 @Service
+@Slf4j
 public class MillionsService {
 
-    private final Repo repo;
+    @Autowired
+    private Repo repo;
 
-    public MillionsService(Repo repo) {
-        this.repo = repo;
-    }
+    @Autowired
+    @Qualifier("db2EntityManagerFactory")
+    R2dbcEntityOperations R2dbcEntityOperations;
 
-    @Transactional(readOnly = true)
-    public void processStreaming() {
-       /* try (Stream<millions> stream = repo.findAllByStreaming()) {
-            stream.forEach(million -> {
-                System.out.println(million);
-                if(million.getId()%200000==0){System.out.println("GCCC");System.gc();}
-            });
-        }*/
-        repo.findAll();
+
+    public Flux<millions> processStreaming() {
+        //List<millions> millionsList = repo.findAll();
+        //millionsList.parallelStream().forEach(System.out::println);
+        return R2dbcEntityOperations.select(millions.class).matching(Query.query(Criteria.empty())
+                .sort(Sort.by("id").ascending()).limit(1_000_000)).all();
     }
 }

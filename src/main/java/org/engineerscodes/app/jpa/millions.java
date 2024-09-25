@@ -1,14 +1,14 @@
-package org.engineerscodes.app;
+package org.engineerscodes.app.jpa;
 
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
+@Table
 @Data
 @NoArgsConstructor
 public class millions {
